@@ -1,0 +1,1463 @@
+:root {
+    --font-family: 'Inter', sans-serif;
+    --font-size: 0.72vw;
+    --text-color: #75D6FF;
+    --background-with-opacity: rgba(255, 255, 255, 0.06);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+    transition: all linear .3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    min-height: 75rem;
+    position: relative;
+    display: block;
+    padding: 8rem 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-heading {
+    font-size: 4.2rem;
+    color: #FFFFFF;
+    letter-spacing: .15rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.main-para {
+    font-size: 1.66rem;
+    color: #FFFFFF;
+    letter-spacing: .05rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.pointer-event-none {
+    pointer-events: none;
+}
+
+.space-top {
+    margin-top: 6rem;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    background-image: url("../../images/section-1-img.png");
+}
+
+.hero-logo {
+    width: 11rem;
+}
+
+.hero-section .hero-text h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.hero-section .hero-text .main-para {
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* Hero Section */
+/*//////////////////////////////////////////*/
+/* Problems Section */
+
+.problem-section {
+    background-image: url("../../images/section-2-img.png");
+    padding: 7rem 3rem 12rem;
+}
+
+.problem-section-item {
+    padding: 6rem 4rem 5rem;
+    border-radius: 2.8rem;
+    background-color: var(--background-with-opacity);
+    text-align: center;
+}
+
+.problem-section-item img {
+    width: 15rem;
+    margin-bottom: 4.2rem;
+}
+
+.problem-section-item .main-para {
+    font-weight: 600;
+    font-size: 1.72rem;
+}
+
+/* Problems Section */
+/*//////////////////////////////////////////*/
+/* Solution Section */
+
+.solution-section {
+    background-image: url("../../images/section-3-img.png");
+    padding: 7rem 3rem 12rem;
+}
+
+.solution-section .container .row {
+    row-gap: 1.6rem;
+    margin: 0;
+}
+
+.solution-section .container .row .col-md-4 {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.solution-item {
+    background-color: var(--background-with-opacity);
+    padding: 1.7rem 1.7rem 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 100%;
+}
+
+.solution-item img {
+    width: 8rem;
+}
+
+.solution-item h4 {
+    font-size: 1.35rem;
+    color: var(--text-color);
+    margin: 1.7rem 0 0.9rem;
+}
+
+.solution-item .main-para {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Solution Section */
+/*//////////////////////////////////////////*/
+/* How Its Section */
+
+.how-works {
+    background-image: url("../../images/section-4-img.png");
+}
+
+.how-works-item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.5rem;
+}
+
+.how-works-item + .how-works-item {
+    margin-top: 3rem;
+}
+
+.how-works-badge {
+    height: 4rem;
+    width: 4rem;
+    min-width: 4rem;
+    border-radius: 50%;
+    background-color: rgba(141, 255, 113, 1);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 2px black;
+    background-image: url("../../images/badge-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0rem 0.5rem 3rem -0rem rgba(141, 255, 113, 1);
+}
+
+.how-works-item h4 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding-top: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* How Its Section */
+/*//////////////////////////////////////////*/
+/* Use Cases Section */
+
+.use-cases {
+    background-image: url("../../images/section-5-img.png");
+}
+
+.use-cases .row {
+    row-gap: 30px;
+}
+
+.use-cases-item {
+    background-color: rgba(0, 115, 247, 0.2);
+    padding: 3.4rem 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 100%;
+    border: .1rem solid rgba(108, 141, 250, 0.2);
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.use-cases-item img {
+    width: 7rem;
+}
+
+.use-cases-text {
+    display: block;
+    text-align: left;
+}
+
+.use-cases-text h5 {
+    font-size: 1.8rem;
+    color: #0073F7;
+    margin: 0 0 0.9rem;
+}
+
+.use-cases-text .main-para {
+    font-size: 1rem;
+}
+
+/* Use Cases Section */
+/*//////////////////////////////////////////*/
+/* Analysis Section */
+
+.analysis-section {
+    background-image: url("../../images/section-6-img.png");
+}
+
+.analysis-section table {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.analysis-section table thead tr th {
+    border-width: 1px;
+    font-weight: 600;
+}
+
+.analysis-section table tr th,
+.analysis-section table tr td {
+    border-color: rgba(255, 255, 255, 0.21);
+    padding: .9rem 1rem;
+    font-size: 1.2rem;
+}
+
+.analysis-section table tbody tr td,
+.analysis-section table tbody tr th {
+    border-top: none !important;
+    font-weight: 400;
+}
+
+.analysis-section table tr th:not(:first-child),
+.analysis-section table tr td:not(:first-child) {
+    border-left: none !important;
+}
+
+.analysis-section table thead tr th:first-child {
+    border-top-left-radius: .5rem;
+}
+
+.analysis-section table thead tr th:last-child {
+    border-top-right-radius: .5rem;
+}
+
+.analysis-section table tbody tr:last-child th:first-child {
+    border-bottom-left-radius: .5rem;
+}
+
+.analysis-section table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: .5rem;
+}
+
+.analysis-section table tbody tr th:first-child {
+    max-width: 19rem;
+}
+
+.analysis-section table tbody tr td {
+    width: 10.5rem;
+}
+
+/* Analysis Section */
+/*//////////////////////////////////////////*/
+/* Business Model Section */
+
+.business-model {
+    background-image: url("../../images/section-7-img.png");
+}
+
+.business-model-item {
+    background-color: var(--background-with-opacity);
+    padding: 2.7rem 10rem 3.2rem 3rem;
+    border-radius: 1rem;
+}
+
+.business-model-item h4 {
+    font-size: 2.2rem;
+    color: #0073F7;
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+}
+
+.business-model-inner {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.8rem;
+    margin-top: 1.6rem;
+}
+
+.business-model-inner .model-badge {
+    height: 1.7rem;
+    width: 1.7rem;
+    min-width: 1.7rem;
+    border-radius: 50%;
+    background-color: rgba(141, 255, 113, 1);
+    background-image: url(../../images/model-badge.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.business-model-inner h5 {
+    font-size: 1.77rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.business-model-item + .business-model-item {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.business-model-item table {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.business-model-item thead tr th {
+    font-size: 1.6rem;
+}
+
+.business-model-item table thead tr th {
+    border-width: 1px;
+    font-weight: 600;
+    background-color: rgba(0, 115, 247, 1);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.business-model-item table tr th,
+.business-model-item table tr td {
+    border-color: rgba(255, 255, 255, 0.18);
+    padding: 1.3rem 1.5rem;
+}
+
+.business-model-item table tbody tr td:first-child {
+    width: 19rem;
+}
+
+.business-model-item table tbody tr td:not(.adjust-border),
+.business-model-item table tbody tr th:not(.adjust-border) {
+    border-top: none !important;
+}
+
+.business-model-item table tbody tr td,
+.business-model-item table tbody tr th {
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.business-model-item table tr th:not(:first-child),
+.business-model-item table tr td:not(:first-child) {
+    border-left: none !important;
+}
+
+/*.business-model-item table:not(.border-radius) thead tr th:first-child {*/
+/*    border-top-left-radius: 1.2rem;*/
+/*}*/
+
+/*.business-model-item table:not(.border-radius) thead tr th:last-child {*/
+/*    border-top-right-radius: 1.2rem;*/
+/*}*/
+
+/*.business-model-item table:not(.border-radius) tbody tr:last-child td:first-child {*/
+/*    border-bottom-left-radius: 1.2rem;*/
+/*}*/
+
+/*.business-model-item table:not(.border-radius) tbody tr:last-child td:last-child {*/
+/*    border-bottom-right-radius: 1.2rem;*/
+/*}*/
+
+.business-model-item table.border-radius thead tr th:first-child {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+}
+
+/* Business Model Section */
+/*//////////////////////////////////////////*/
+/* Unique Selling Section */
+
+.unique-selling {
+    background-image: url("../../images/section-8-img.png");
+    padding-bottom: 11rem;
+}
+
+.usp-item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.8rem;
+    margin-top: 3rem;
+    padding-right: 4rem;
+}
+
+.usp-item .model-badge {
+    height: 2.3rem;
+    width: 2.3rem;
+    min-width: 2.3rem;
+    margin-top: 0.4rem;
+    border-radius: 50%;
+    background-color: rgba(141, 255, 113, 1);
+    background-image: url(../../images/model-badge.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.usp-item h4, .unique-selling-para {
+    font-size: 1.46rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Unique Selling Section */
+/*//////////////////////////////////////////*/
+/* Successful Social Section */
+
+.successful-social {
+    background-image: url("../../images/section-9-img.png");
+    min-height: 93rem;
+}
+
+.successful-item {
+    background-color: var(--background-with-opacity);
+    padding: 3.5rem 4rem;
+    border-radius: 1rem;
+    max-width: 56rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 3rem;
+}
+
+.successful-lgo {
+    grid-column: span 2;
+}
+
+.successful-item-img {
+    grid-column: span 3;
+}
+
+.successful-item-img a + a {
+    margin-top: 2.5rem;
+}
+
+.successful-item + .successful-item {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+    max-width: 77rem;
+}
+
+.successful-item + .successful-item h4 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.successful-item + .successful-item .main-para.heading {
+    font-weight: 600;
+}
+
+.successful-item + .successful-item .main-para strong {
+    font-weight: 500;
+}
+
+.successful-item + .successful-item .main-para a {
+    color: #8DFF71;
+}
+
+.successful-social .successful-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 49rem;
+}
+
+/* Successful Social Section */
+/*//////////////////////////////////////////*/
+/* Market Size Section */
+
+.market-size {
+    background-image: url("../../images/section-10-img.png");
+    min-height: fit-content;
+    padding-bottom: 6rem;
+}
+
+.market-size-chart {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 40rem;
+}
+
+.market-size-text {
+    margin-top: 2rem;
+}
+
+.market-size-text h4 {
+    font-size: 2rem;
+    color: #008CFF;
+    margin-bottom: 0;
+}
+
+.market-size-text .main-para {
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.market-size-text .main-para b {
+    font-weight: 500;
+}
+
+.market-size-text + .market-size-text {
+    margin-top: 2rem;
+}
+
+.market-size-text:nth-of-type(2) h4 {
+    color: #ffb800;
+}
+
+.market-size-text:nth-of-type(3) h4 {
+    color: #E82AD5;
+}
+
+.market-size-text .main-para.small {
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+}
+
+.market-size-text .main-para.small a:hover {
+    color: inherit;
+}
+
+/* Market Size Section */
+/*//////////////////////////////////////////*/
+/* Unique Selling Section */
+
+.sub-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.unique-selling.pre-seed {
+    padding-bottom: 6rem;
+}
+
+.unique-selling.pre-seed .usp-item {
+    padding-right: 0px !important;
+}
+
+.unique-selling.pre-seed .usp-item h4 {
+    font-weight: 300;
+}
+
+/* Unique Selling Section */
+/*//////////////////////////////////////////*/
+/* Fund Raising Section */
+
+
+.fund-raising-sec {
+    background-image: url("../../images/section-12-img.png");
+}
+
+.fund-raising-sec table {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.fund-raising-sec table thead tr th {
+    border-width: 1px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.13);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.fund-raising-sec table tr th,
+.fund-raising-sec table tr td {
+    border-color: rgba(255, 255, 255, 0.13);
+    padding: 1.3rem 1.5rem;
+}
+
+.fund-raising-sec table tbody tr td,
+.fund-raising-sec table tbody tr th {
+    border-top: none !important;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.fund-raising-sec table tr th:not(:first-child),
+.fund-raising-sec table tr td:not(:first-child) {
+    border-left: none !important;
+}
+
+.fund-raising-sec table thead tr th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+
+.fund-raising-sec table thead tr th:last-child {
+    border-top-right-radius: 1.2rem;
+}
+
+.fund-raising-sec table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 1.2rem;
+}
+
+.fund-raising-sec table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 1.2rem;
+}
+
+.fund-raising-sec table tbody tr td {
+    width: 33.3333335%;
+}
+
+
+/* Fund Raising Section */
+/*//////////////////////////////////////////*/
+/* Capital Section */
+
+.use-capital-sec {
+    background-image: url("../../images/section-13-img.png");
+}
+
+.capital-wrapper {
+    display: grid;
+    grid-template-areas:
+        'charts charts item1 right'
+        'charts charts item2 right';
+    gap: 1.4rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.use-capital-item {
+    padding: 2.5rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.use-capital-charts {
+    grid-area: charts;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem 3rem;
+}
+
+/*.use-capital-charts h3 {*/
+/*    padding: 0rem 3rem;*/
+/*}*/
+
+.charts-img-2 {
+    min-height: 17rem;
+}
+
+.use-capital-item1 {
+    grid-area: item1;
+    background-color: rgba(30, 120, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.use-capital-item2 {
+    grid-area: item2;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.use-capital-right {
+    grid-area: right;
+    background-color: rgba(255, 153, 0, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.use-capital-item h3 {
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+
+/* Capital Section */
+/*//////////////////////////////////////////*/
+/* Projection Section */
+
+.projection-sec {
+    background-image: url("../../images/section-14-img.png");
+}
+
+.projection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projection-wrapper-left {
+    width: 62%;
+}
+
+.projection-sec table {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.projection-sec .projection-wrapper-left table.adjust-fonts thead tr th {
+    font-size: 1.6rem;
+}
+
+.projection-sec table thead tr th {
+    border-width: 1px;
+    font-weight: 600;
+    background-color: rgba(0, 115, 247, 1);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.projection-sec table tr th,
+.projection-sec table tr td {
+    border-color: rgba(255, 255, 255, 0.18);
+    padding: 1.3rem 1.5rem;
+}
+
+.projection-sec table tbody tr td:first-child {
+    width: 19rem;
+}
+
+.projection-sec table tbody tr td:not(.adjust-border),
+.projection-sec table tbody tr th:not(.adjust-border) {
+    border-top: none !important;
+}
+
+.projection-sec table tbody tr td,
+.projection-sec table tbody tr th {
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.projection-sec table tr th:not(:first-child),
+.projection-sec table tr td:not(:first-child) {
+    border-left: none !important;
+}
+
+.projection-sec table:not(.border-radius) thead tr th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+
+.projection-sec table:not(.border-radius) thead tr th:last-child {
+    border-top-right-radius: 1.2rem;
+}
+
+.projection-sec table:not(.border-radius) tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 1.2rem;
+}
+
+.projection-sec table:not(.border-radius) tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 1.2rem;
+}
+
+.projection-sec table.border-radius thead tr th:first-child {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+}
+
+.problem-section-inner {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.problem-section-inner table {
+    border: 0;
+    margin-bottom: 0;
+}
+
+.problem-section-inner table tr th,
+.problem-section-inner table tr td {
+    padding: .71rem 1rem;
+}
+
+.problem-section-inner table thead tr th {
+    border-color: rgba(0, 115, 247, 1);
+    background-color: transparent;
+}
+
+.problem-section-inner table.blue-table tr th {
+    background-color: rgba(0, 115, 247, 1);
+}
+
+.problem-section-inner table:first-child tr td {
+    padding-top: 1.2rem;
+}
+
+.projection-wrapper-right {
+    width: 38%;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.projection-wrapper-right .problem-section-inner {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+}
+
+.projection-wrapper-right .problem-section-inner table:first-child tr td {
+    width: 67%;
+    padding: 0.49rem 1.4rem;
+}
+
+.projection-wrapper-right .problem-section-inner table:first-child tr td:last-child {
+    text-align: center;
+}
+
+.projection-wrapper-right .problem-section-inner table + table tbody tr td {
+    width: 33.3335%;
+}
+
+.projection-wrapper-right .problem-section-inner table + table tbody tr:first-child td:first-child {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.projection-wrapper-right .problem-section-inner table + table {
+    margin-top: 1.6rem;
+}
+
+.projection-wrapper-right .problem-section-inner table + table + table {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Projection Section */
+/*//////////////////////////////////////////*/
+/* Roadmap Section */
+
+.roadmap-sec {
+    background-image: url("../../images/section-15-img.png");
+}
+
+.roadmap-item {
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    overflow: hidden;
+    height: 100%;
+}
+
+.roadmap-heading {
+    height: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.roadmap-item-outer:nth-of-type(1) .roadmap-heading {
+    background-image: url("../../images/roadmap-heading-1.png");
+}
+
+.roadmap-item-outer:nth-of-type(1) .roadmap-item {
+    background: linear-gradient(180deg, rgba(255, 184, 0, 0.15) 0%, rgba(255, 92, 0, 0.1) 100%);
+}
+
+.roadmap-item-outer:nth-of-type(2) .roadmap-item {
+    background: linear-gradient(180deg, rgba(0, 115, 247, 0.15) 0%, rgba(0, 66, 165, 0.01) 100%);
+
+}
+
+.roadmap-item-outer:nth-of-type(3) .roadmap-item {
+    background: linear-gradient(180deg, rgba(0, 115, 247, 0.15) 0%, rgba(0, 66, 165, 0.01) 100%);
+
+}
+
+.roadmap-item-outer:nth-of-type(2) .roadmap-heading {
+    background-image: url("../../images/roadmap-heading-2.png");
+}
+
+.roadmap-item-outer:nth-of-type(3) .roadmap-heading {
+    background-image: url("../../images/roadmap-heading-3.png");
+}
+
+.roadmap-body {
+    padding: 1.4rem 3rem;
+}
+
+.roadmap-body h4 {
+    font-size: 1.36rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.roadmap-body ul {
+    margin-top: 2.5rem;
+}
+
+.roadmap-body ul li {
+    display: flex;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    /*align-items: center;*/
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-body ul li span {
+    width: 1rem;
+    min-width: 1rem;
+    height: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-top: .3rem;
+}
+
+/*.roadmap-item-outer:nth-of-type(2) .roadmap-body ul li,*/
+/*.roadmap-item-outer:nth-of-type(3) .roadmap-body ul li {*/
+/*    align-items: flex-start;*/
+/*}*/
+
+/*.roadmap-item-outer:nth-of-type(2) .roadmap-body ul li span,*/
+/*.roadmap-item-outer:nth-of-type(3) .roadmap-body ul li span {*/
+/*    height: unset;*/
+/*    width: unset;*/
+/*    background-color: unset;*/
+/*}*/
+
+/* Roadmap Section */
+/*//////////////////////////////////////////*/
+/* Team Section */
+
+.team-sec {
+    background-image: url("../../images/section-16-img.png");
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 4rem;
+}
+
+.team-item {
+    display: block;
+    position: relative;
+}
+
+.team-item h4 {
+    font-size: 1.2rem;
+    color: rgba(117, 214, 255, 1);
+    font-weight: 500;
+    margin-top: 2.2rem;
+}
+
+.team-item h5 {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: .8rem;
+}
+
+/* Team Section */
+/*//////////////////////////////////////////*/
+/* invest Section */
+
+.invest-sec .sub-heading {
+    font-size: 3.34rem;
+}
+
+.invest-sec .main-para {
+    font-weight: 300;
+    font-size: 2.55rem;
+    line-height: 1.3;
+}
+
+.invest-sec .main-para:nth-child(3), .invest-sec .main-para:nth-child(3) a {
+    margin-top: 5rem;
+    color: rgba(255, 184, 0, 1);
+    font-weight: 500;
+}
+
+.invest-sec .main-para:nth-child(4), .invest-sec .main-para:nth-child(4) a {
+    margin-top: 1.5rem;
+    color: rgba(0, 140, 255, 1);
+    font-weight: 500;
+}
+
+.invest-sec .column-custom-padding {
+    padding-top: 9rem;
+}
+
+
+@media (max-width: 1330px) {
+    #canvas {
+        max-width: 100%;
+    }
+
+    .use-capital-item h3 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 993px) {
+    .remove-border-left {
+        border-left: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --font-size: 10px;
+    }
+
+    section {
+        min-height: fit-content;
+        padding: 4rem 0rem;
+    }
+
+    .problem-section, .solution-section {
+        padding: 4rem 0 6rem;
+    }
+
+    .space-top {
+        margin-top: 3rem;
+    }
+
+    .hero-logo {
+        width: 8rem;
+    }
+
+    .main-heading {
+        font-size: 3rem;
+    }
+
+    .main-para {
+        font-size: 1.4rem;
+    }
+
+    .hero-section .hero-text h5 {
+        font-size: 1rem;
+    }
+
+    .problem-section-item img {
+        width: 9rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .problem-section-item .main-para {
+        font-size: 1.45rem;
+    }
+
+    .problem-section-item {
+        padding: 4rem 3rem;
+    }
+
+    .solution-item img {
+        width: 6rem;
+    }
+
+    .solution-item h4 {
+        margin: 1rem 0 0.5rem;
+    }
+
+    .how-works-item h4 {
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
+    }
+
+    .how-works-badge {
+        height: 3rem;
+        width: 3rem;
+        min-width: 3rem;
+        font-size: 1.4rem;
+    }
+
+    .how-works .main-heading + .container {
+        margin-top: 3rem;
+    }
+
+    .how-works-item + .how-works-item {
+        margin-top: 2rem;
+    }
+
+    .use-cases-item img {
+        width: 6rem;
+    }
+
+    .use-cases-item {
+        padding: 3rem;
+        column-gap: 2rem;
+    }
+
+    .analysis-section table tbody tr td {
+        width: 10%;
+    }
+
+    .analysis-section table tbody tr th:first-child {
+        max-width: 30%;
+    }
+
+    .business-model-item {
+        padding: 3rem;
+    }
+
+    .business-model-inner {
+        column-gap: 1.2rem;
+        margin-top: 1.4rem;
+    }
+
+    .business-model-item h4 {
+        font-size: 1.7rem;
+    }
+
+    .business-model-inner h5 {
+        font-size: 1.3rem;
+    }
+
+    .business-model-inner .model-badge {
+        height: 1.2rem;
+        width: 1.2rem;
+        min-width: 1.2rem;
+        margin-top: 0.3rem;
+    }
+
+    .usp-item .model-badge {
+        height: 1.5rem;
+        width: 1.5rem;
+        min-width: 1.5rem;
+        margin-top: .3rem;
+    }
+
+    .usp-item {
+        column-gap: 1em;
+        margin-top: 2rem;
+        padding-right: 0rem;
+    }
+
+    .unique-selling .row.align-items-lg-center {
+        row-gap: 4rem;
+    }
+
+    .unique-selling {
+        padding-bottom: 6rem;
+    }
+
+    .usp-item h4, .unique-selling-para {
+        font-size: 1.2rem;
+    }
+
+    .successful-item {
+        background-color: var(--background-with-opacity);
+        padding: 3rem 3rem;
+        border-radius: 1rem;
+        max-width: 100%;
+    }
+
+    .successful-item + .successful-item {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+        max-width: 100%;
+    }
+
+    .successful-item + .successful-item h4 {
+        font-size: 2rem;
+    }
+
+    .fund-raising-sec {
+        padding-bottom: 0;
+        margin-bottom: -5%;
+        overflow: hidden;
+    }
+
+    .capital-wrapper {
+        grid-template-areas: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .use-capital-item {
+        grid-area: unset;
+    }
+
+    .projection-wrapper {
+        row-gap: 2rem;
+    }
+
+    .projection-wrapper-left,
+    .projection-wrapper-right {
+        width: 100%;
+    }
+
+    .problem-section-inner {
+        margin-top: 2rem;
+    }
+
+    .projection-wrapper-right .problem-section-inner table + table + table {
+        position: unset;
+    }
+
+    .projection-wrapper-right {
+        padding-left: 0px;
+    }
+
+    .projection-wrapper-right .problem-section-inner table + table {
+        margin-top: 0;
+    }
+
+    .roadmap-sec .row {
+        row-gap: 2.5rem;
+    }
+
+    .team-wrapper {
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+    }
+
+    .invest-sec .column-custom-padding {
+        padding-top: 0rem;
+    }
+
+    .invest-sec .row {
+        row-gap: 3rem;
+    }
+
+    .invest-sec .sub-heading {
+        font-size: 2.5rem;
+    }
+
+    .invest-sec .main-para {
+        font-size: 1.7rem;
+    }
+
+    .invest-sec .main-para:nth-child(3), .invest-sec .main-para:nth-child(3) a {
+        margin-top: 3rem;
+    }
+
+    .invest-sec .main-para:nth-child(4), .invest-sec .main-para:nth-child(4) a {
+        margin-top: 0.71rem;
+    }
+
+    .invest-sec.unique-selling.pre-seed {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        padding: 0px 15px;
+    }
+
+    .solution-item img {
+        width: 7rem;
+    }
+
+    .problem-section .row {
+        row-gap: 1.5rem;
+    }
+
+    .solution-item h4 {
+        font-size: 1.5rem;
+    }
+
+    .solution-item .main-para {
+        font-size: 1.3rem;
+    }
+
+    .business-model-item table thead tr th {
+        white-space: nowrap;
+    }
+
+    .analysis-section table tbody tr th:first-child {
+        max-width: inherit;
+        white-space: nowrap;
+    }
+
+    .successful-item + .successful-item {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1.5rem;
+        max-width: 100%;
+        row-gap: 1rem;
+    }
+
+    .use-cases-text .main-para br {
+        display: none;
+    }
+
+    .use-cases-item {
+        padding: 2.5rem;
+        column-gap: 1.8rem;
+    }
+
+    .use-cases-item img {
+        width: 4rem;
+    }
+
+    .use-cases-text h5 {
+        font-size: 1.4rem;
+    }
+
+    .main-heading {
+        font-size: 2.2rem;
+    }
+
+    .business-model .container {
+        margin-top: 2rem;
+    }
+
+    .successful-item {
+        padding: 2rem 2rem;
+    }
+
+    .capital-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .table-responsive table.table.table-bordered.text-white.border-radius.adjust-fonts {
+        margin-bottom: 2rem;
+    }
+
+    .team-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .invest-sec .sub-heading {
+        font-size: 1.8rem;
+    }
+
+    .invest-sec .main-para {
+        font-size: 1.4rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .market-size-text h4 {
+        font-size: 1.6rem;
+    }
+
+    .market-size-text .main-para {
+        font-size: 1.15rem;
+        line-height: 1.5;
+    }
+
+    .market-size-text + .market-size-text {
+        margin-top: 1rem;
+    }
+
+    .market-size {
+        padding-bottom: 4rem;
+    }
+
+    .fund-raising-sec {
+        margin-bottom: -3%;
+    }
+
+    .problem-section-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .roadmap-heading {
+        height: 6rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .team-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-item h4 {
+        margin-top: 1.2rem;
+    }
+
+    .market-size-text .main-para.small {
+        font-size: .87em;
+    }
+
+    .fund-raising-sec table tbody tr td {
+        width: unset;
+        white-space: nowrap;
+    }
+}
